@@ -1,0 +1,24 @@
+{
+  "name": "flustered-monkey",
+  "version": "1.0.0",
+  "description": "Trello power up test",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristian76/flustered-monkey.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristian76/flustered-monkey/issues"
+  },
+  "homepage": "https://github.com/kristian76/flustered-monkey#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.3"
+  }
+}

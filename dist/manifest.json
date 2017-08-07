@@ -1,0 +1,19 @@
+{
+  "name": "Flustered Monkey",
+  "details": "A super power-up",
+  "icon": {
+    "url": "./images/chemistry.png"
+  },
+  "author": "Superman",
+  "capabilities": [
+    "callback",
+    "card-buttons",
+    "card-badges",
+    "board-buttons"
+  ],
+  "connectors": {
+    "iframe": {
+      "url": "./index.html"
+    }
+  }
+}
