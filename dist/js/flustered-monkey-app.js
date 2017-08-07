@@ -8,10 +8,10 @@ var onCardButtonClick = function(t, opts) {
 
     return t.popup({
         title: 'Task',
-        items: [
-            {
-                text: 'Sync',
-                callback: function (t, opts) {
+        items: [{
+            text: 'Sync',
+            callback: function (t, opts) {
+                console.log(opts);
                     t.card('all')
                         .then(function (card) {
                             // Fetch data from backend

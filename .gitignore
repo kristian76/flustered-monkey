@@ -1,3 +1,4 @@
 *.db
 .c9
 node_modules
+auth.js

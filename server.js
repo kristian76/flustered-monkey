@@ -5,7 +5,8 @@ var express = require("express"),
     path = require("path"),
     DataStore = require("nedb"),
     bodyParser = require('body-parser'),
-    cors = require('cors');
+    cors = require('cors'),
+    auth = require('./auth');
 
 var app = express(),
     db = new DataStore({filename: path.join("appdb.db"), autoload: true}),
@@ -16,6 +17,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(express.static(dist));
+
+app.get("/test", function (req, res) {
+    console.log(auth);
+
+    res.format({
+        'text/html': function () {
+            res.send('<p>Hello Kitty</p>');
+        }
+    })
+});
 
 app.get("/api/card/:cardid", function (req, res) {
 
